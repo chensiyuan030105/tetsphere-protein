@@ -1,0 +1,12 @@
+dataset/
+tmp/
+results/
+.tetwild_cache/
+__pycache__/
+mesh_data
+config/
+wandb/
+extern/
+
+# C extensions
+*.so
