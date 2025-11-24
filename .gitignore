@@ -4,7 +4,9 @@ results/
 .tetwild_cache/
 __pycache__/
 mesh_data
-config/
+config/pdb
+config/af3_test
+config/amino_acid
 wandb/
 extern/
 
