@@ -205,7 +205,6 @@ def compute_surface_and_map_residues(input_pdb, input_ply, output_ply, resolutio
     
     # Step 1: Extract residues and their atoms
     residue_atoms = get_residue_atoms(input_pdb)
-    print("residue_atoms =", residue_atoms)
     
     # Step 2: Load the surface PLY file (MSMS result)
     if not os.path.exists(input_ply):

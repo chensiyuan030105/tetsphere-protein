@@ -1,12 +1,13 @@
 #!/bin/bash
+dataset_type=$1
 
-LIST_FILE="../dataset/masif/lists/full_list.txt"
-RAW_DIR="../dataset/masif/00-raw_pdbs"
-PDB_OUT_DIR="../dataset/masif/01-benchmark_pdbs"
-SURFACE_IN_DIR="../dataset/masif/01-benchmark_pdbs_surfaces"
-SURFACE_OUT_DIR="../dataset/masif/01-benchmark_pdbs_surfaces_split"
+LIST_FILE="../dataset/$dataset_type/lists/test_list.txt"
+RAW_DIR="../dataset/$dataset_type/00-raw_pdbs"
+PDB_OUT_DIR="../dataset/$dataset_type/01-benchmark_pdbs"
+SURFACE_IN_DIR="../dataset/$dataset_type/01-benchmark_pdbs_surfaces"
+SURFACE_OUT_DIR="../dataset/$dataset_type/01-benchmark_pdbs_surfaces_split"
 
-RES=$1
+RES=$2
 
 if [ -z "$RES" ]; then
     echo "Usage: ./run_surface.sh <resolution>"

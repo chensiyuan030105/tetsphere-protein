@@ -1,4 +1,6 @@
-dataset/
+dataset/alphafold3/
+dataset/masif/
+
 tmp/
 results/
 .tetwild_cache/
